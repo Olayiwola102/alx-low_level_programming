@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int a = 0, i = 2;
+	int a = 11, i = 2;
 
 	printf("%d", a);
 	while (i <= 101)
