@@ -11,7 +11,7 @@ int main(void)
 	int a = 11, i = 2;
 
 	printf("%d", a);
-	while (i <= 101)
+	while (i < 101)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 			printf(" FizzBuzz");
