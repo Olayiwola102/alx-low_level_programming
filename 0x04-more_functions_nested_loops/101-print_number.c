@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - prints the largest prime factorial of 612852475143
- *
+ * print_number - prints an integer
+ * @n: integer to e use in the program
  * Return: 0
  */
 void print_number(int n)
