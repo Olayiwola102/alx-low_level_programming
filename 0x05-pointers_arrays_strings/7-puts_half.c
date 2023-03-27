@@ -9,10 +9,10 @@ void puts_half(char *str)
 {
 	int longi = 0;
 
-	while (*s != '\0')
+	while (*str != '\0')
 	{
 		longi++;
-		s++;
+		str++;
 	}
-	return (longi);
+	_putchar(longi);
 }
