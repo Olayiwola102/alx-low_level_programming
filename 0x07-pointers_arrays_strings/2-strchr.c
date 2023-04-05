@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- *
  * _strchr - the entry point in the program
  * @s: variable to take input
  * @c: variable to take input
