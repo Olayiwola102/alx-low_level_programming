@@ -24,17 +24,3 @@ int _sqrt_recursion(int n)
 	}
 	return (_sqrt_recursion(n - (m - 1) * (m - 1)));
 }
-/**
- * _sqrt_recursion - recursive the square root
- * @n: the variable n 
- * Return: give the square root of the number
- */
-int _sqrt_recursion(int n)
-{
-	int m = 1;
-	while (m * m <= n)
-	{
-		m++;
-	}
-	return (_sqr_recursion(n - (m - 1) * (m - 1)));
-}
