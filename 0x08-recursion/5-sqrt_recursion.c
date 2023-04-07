@@ -17,7 +17,9 @@ int _sqrt_recursions(int n, int small, int big)
 	{
 		return (-1);
 	}
+
 	interval = (small + big) / 2;
+
 	sqr = interval * interval;
 
 	if (sqr == n)
@@ -40,6 +42,7 @@ int _sqrt_recursions(int n, int small, int big)
  */
 int _sqrt_recursion(int n)
 {
+
 	if (n < 0)
 	{
 		return (-1);
