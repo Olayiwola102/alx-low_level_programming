@@ -5,6 +5,7 @@
  * is_palindromes - checking if the number input ids a prime
  * @begin: the beginning of divisor
  * @end: the end of the  divisor
+ * @s: string
  * Return: return 1 if the string is palindrome
  *	return 0 if not palindrome
  */
