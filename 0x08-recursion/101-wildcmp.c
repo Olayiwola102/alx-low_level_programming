@@ -14,7 +14,7 @@ int wildcmp(char *s1, char *s2)
 {
 	if (*s1 == '\0')
 	{
-		while (*s2 == '\0')
+		while (*s2 == '*')
 		{
 			s2++;
 		}
