@@ -18,7 +18,6 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL)
 	{
 		s1 = "";
-	
 	}
 	if (s2 == NULL)
 	{
@@ -35,5 +34,5 @@ char *str_concat(char *s1, char *s2)
 	strcpy(concatenated, s1);
 	strcat(concatenated, s2);
 
-	return concatenated;
+	return (concatenated);
 }
