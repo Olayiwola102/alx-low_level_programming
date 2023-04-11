@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - whqat my name
+ * main- a program that prints its name
  * @argc: number of arguments in the program
  * @argv: array of arguments in the proogram
+ * Return: a value
  */
 int main(int argc, char *argv[])
 {
