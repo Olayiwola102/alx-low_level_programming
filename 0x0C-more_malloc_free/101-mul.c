@@ -4,32 +4,28 @@
 #include <ctype.h>
 
 /**
- * _is_zero - determines if any number is zero
- * @argv: argument vector.
- * main - validate input
- * is_digits - to check if a string contains only digit
+ * multiply - determines if any number is zero
+ * @num1: argument vector.
+ * @num2: argument
+ * main - validate input and check the argument.
+ * @argv - argument
+ * @argc - argument
+ * isNumeric - to check if a string contains only digit
+ * @str - argument
  * Return: no return.
  */
-unsigned int multiply(unsigned int num1, unsigned int num2)
+unsigned int multiply(unsigned long long int num1, unsigned long long int num2)
 {
-	unsigned int result = 0;
-
-	while (num2 > 0)
-	{
-		if (num2 & 1)
-		{
-			result += num1;
-		}
-		num1 <<= 1;
-		num2 >>= 1;
-	}
-	return (result);
+	return (num1 * num2);
 }
-int is_digits(char *str)
+/**
+ * isNumeric - validate input
+ * @str: string
+ * Return: 0
+ */
+int isNumeric(const char *str)
 {
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
+	for (int i = 0; str[i]; i++)
 	{
 		if (!isdigit(str[i]))
 		{
@@ -38,24 +34,28 @@ int is_digits(char *str)
 	}
 	return (1);
 }
+/**
+ * main - check for correct argument
+ * @argv: argument
+ * @argc: argument
+ * Return: 0
+ */
 int main(int argc, char *argv[])
-{
-	unsigned int num1, num2;
-	unsigned int result;
+	{
+		if (argc != 3)
+		{
+			printf("Error\n");
+			return (98);
+		}
+		if (!isNumeric(argv[1]) || !isNumeric(argv[2]))
+		{
+			printf("Error\n");
+			return (98);
+		}
+		unsigned long int num1 = strtoull(argv[1], NULL, 10);
+		unsigned long int num2 = strtoull(argv[2], NULL, 10);
+		unsigned long int result = multiply(num1, num2);
 
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (98);
+		printf("%llu\n", result);
+		return (0);
 	}
-	if (!is_digits(argv[1]) || !is_digits(argv[2]))
-	{
-		printf("Error\n");
-		return (98);
-	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = multiply(num1, num2);
-	printf("%u\n", result);
-	return (0);
-}
