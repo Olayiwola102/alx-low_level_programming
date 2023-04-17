@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-	puts(",__FILE__);
+	puts("%s\n",__FILE__);
 	return (0);
 }
