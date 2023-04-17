@@ -2,6 +2,6 @@
 
 int main()
 {
-	puts(__FILE__);
+	puts("%s\n",__FILE__);
 	return (0);
 }
