@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 {
 	int n, bytes;
 	char *addr;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -30,5 +30,5 @@ int main(int argc, char **argv)
 	for (n = 0; n < bytes - 1; n++)
 		printf("%02hhx ", addr[n]);
 	printf("%02hhx\n", addr[n]);
-	return 
+	return (0);
 }
